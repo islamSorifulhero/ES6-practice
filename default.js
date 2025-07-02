@@ -21,9 +21,32 @@
 // const totalNum = add(11);
 // console.log(totalNum);
 
-function add(num1, num2){
-    num2 = num2 || 0;
+// function add(num1, num2){
+//     num2 = num2 || 0;
+//     return num1 + num2;
+// }
+// const total = add(35);
+// console.log(total);
+
+
+// function add(num1, num2){
+//     num2 = num2 || 65;
+//     return num1 + num2;
+// }
+// const total = add(35);
+// console.log(total);
+
+
+// function add(num1, num2 = 45){
+//     return num1 + num2;
+// }
+// const total = add(35);
+// console.log(total);
+
+function add(num1, num2 = 45){
     return num1 + num2;
 }
-const total = add(35);
+const total = add(35, 5);
 console.log(total);
+
+
