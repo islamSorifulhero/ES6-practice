@@ -10,9 +10,16 @@
         <li>my item</li>
         <li>lorem, ipsum.</li>
         <li>Nostrum, enim.</li>
-        <li>trmpore, fuga.</li>
-        <li>Rerum, consequuntur.</li>
-        <li>Mollitia, magnam?</li>
+        <li onclick="this.innerText='good click korle this.innerText ar jonno new sentence dekha jacche.'">trmpore, fuga.</li>
+        <li onclick="itemClickHander(event)">Rerum, consequuntur.</li>
+        <li id="lastParson">Mollitia, magnam?</li>
     </ul>
+
+    <script>
+        function itemClickHander(event){
+            console.log(event.target.innerText)
+        }
+        document.getElementById('lastParson').addEventListener('click', itemClickHander);
+    </script>
 </body>
 </html>
